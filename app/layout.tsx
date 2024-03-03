@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: ['https://luongkhoa.io.vn/logo.png'],
   },
+  manifest: "/manifest.webmanifest"
 };
 
 export default function RootLayout({
