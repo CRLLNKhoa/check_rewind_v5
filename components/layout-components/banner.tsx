@@ -5,7 +5,7 @@ import text from "@/admin/notic.json";
 
 export default function Banner() {
   return (
-    <div className="p-4 px-6">
+    <div className="p-4 lg:px-6">
       <div
         className=" border h-full rounded-xl gap-2
          flex p-2 pl-5"
