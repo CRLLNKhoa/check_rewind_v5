@@ -22,20 +22,30 @@ export default function Page() {
     get();
   }, []);
 
-  if(data.length === 0){
-    return <p className="text-center p-12 font-bold text-primary animate-pulse">Đang tải thông tin...</p>
+  if (data.length === 0) {
+    return (
+      <p className="text-center p-12 font-bold text-primary animate-pulse">
+        Đang tải thông tin...
+      </p>
+    );
   }
 
   return (
     <div className="flex flex-col overflow-y-auto relative pb-6">
-      <h1 className="text-red-500 font-bold select-none mb-6 border-b pb-2 sticky top-0">
-        MUA NICK DAYS BYGONE
-      </h1>
+      <div className="flex justify-between items-center mb-6 border-b">
+        <h1 className="text-red-500 font-bold select-none sticky top-0">
+          MUA NICK DAYS BYGONE
+        </h1>
+        <a href="https://luongkhoa.io.vn/" target="_blank" className="text-xs cursor-pointer text-primary font-bold">Liên hệ đăng tin</a>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4">
-        {data.map((item:any) => {
-          return(
-            <CardComponent key={item.id} data={item} />
-          )
+        {data.map((item: any) => {
+          return (
+            <CardComponent
+              key={item.id}
+              data={item}
+            />
+          );
         })}
       </div>
       <div className="mt-6 cursor-not-allowed">

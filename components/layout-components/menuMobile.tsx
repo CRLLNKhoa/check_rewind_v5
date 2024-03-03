@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 export default function MenuMobile() {
   const pathname = usePathname()
   return (
-    <div className="px-6 col-span-2">
+    <div className=" col-span-2">
       <Link href={"/"} className={cn("menu-btn", pathname === "/" && "menu-active")}>
         <TbCircleDashedNumber1 className="text-2xl" />
         Single rewind
