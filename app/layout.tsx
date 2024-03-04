@@ -6,7 +6,7 @@ import Header from "@/components/layout-components/header";
 import Banner from "@/components/layout-components/banner";
 import Menu from "@/components/layout-components/menu";
 import QueryProvider from "@/components/provider/query-provider";
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
   title: "Check Cost",
   description: "@copyright by Lương Khoa",
@@ -44,6 +44,7 @@ export default function RootLayout({
             </div>
           </ThemeProvider>
         </QueryProvider>
+        <Analytics/>
       </body>
     </html>
   );
