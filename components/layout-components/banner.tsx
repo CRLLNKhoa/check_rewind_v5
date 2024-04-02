@@ -19,7 +19,7 @@ export default function Banner() {
           speed={100}
         >
           <div className="flex mr-12"><b className="text-red-500 mr-2">Xin chào!</b> - website này được tạo bởi <b className="font-bold ml-2 text-primary">Lương Khoa</b></div>
-          <div className="flex mr-12"><b className="text-red-500 mr-2">Tuyển thành viên!</b> - Guild VietNamOnTop tuyển 2 slot 18K+</div>
+          <div className="flex mr-12"><b className="text-red-500 mr-2">Góc giúp đỡ!</b> - tham gia nhóm này giúp tôi với ạ: <a className="font-bold ml-2 text-red-500" href="https://www.facebook.com/groups/3106470586152259/?ref=share" target="_blank">Click!</a></div>
           <div className="flex mr-12"><b className="text-red-500 mr-2">Đổi tên miền!</b> - Tên miền luongkhoa.shop sắp hết truy cập được bạn có thể dùng tên miền https://check-rewind.vercel.app</div>
         </Marquee>
       </div>
