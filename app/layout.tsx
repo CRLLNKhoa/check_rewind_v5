@@ -6,14 +6,14 @@ import Header from "@/components/layout-components/header";
 import Banner from "@/components/layout-components/banner";
 import Menu from "@/components/layout-components/menu";
 import QueryProvider from "@/components/provider/query-provider";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Check Cost",
   description: "@copyright by Lương Khoa",
   openGraph: {
-    images: ['https://luongkhoa.io.vn/logo.png'],
+    images: ["https://luongkhoa.io.vn/logo.png"],
   },
-  manifest: "/manifest.webmanifest"
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
@@ -22,10 +22,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-    >
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7465388386459244"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className="relative h-screen flex flex-col">
         <QueryProvider>
           <ThemeProvider
@@ -44,7 +48,7 @@ export default function RootLayout({
             </div>
           </ThemeProvider>
         </QueryProvider>
-        <Analytics/>
+        <Analytics />
       </body>
     </html>
   );
