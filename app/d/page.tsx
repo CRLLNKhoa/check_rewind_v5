@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Table,
@@ -21,8 +23,8 @@ import { IoSearchCircleOutline } from "react-icons/io5";
 export default function Page() {
   const [data, setData] = useState<any>(doubleCost);
   const [dataTable, setDataTable] = useState<any>([]);
-  const [currentDay, setCurrentDay] = useState<any>(0);
-  const [plannedDay, setPlannedDay] = useState<any>(0);
+  const [currentDay, setCurrentDay] = useState<any>(1000);
+  const [plannedDay, setPlannedDay] = useState<any>(1200);
   const [sort, setSort] = useState<any>(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -61,6 +63,11 @@ export default function Page() {
         setIsLoading(false)
       },1000)
   }
+
+  useEffect(() => {
+    handleSearch()
+  },[])
+  
   return (
     <main className="flex flex-col items-center justify-between overflow-y-auto">
       <div className="px-4 flex w-full lg:w-4/5 flex-col pb-12">

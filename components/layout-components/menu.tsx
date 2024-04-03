@@ -31,19 +31,19 @@ export default function Menu() {
         <IoTimeOutline className="text-2xl" />
         Thời gian rewind
       </Link>
-      <Link href={"/l"} className={cn("menu-btn", pathname === "/l" && "menu-active")}>
+      <Link href={"/"} className={cn("menu-btn", pathname === "/l" && "menu-active")}>
         <MdOutlineAttachFile className="text-2xl" />
         Level skill leo day
       </Link>
-      <Link href={"/shop"} className={cn("menu-btn", pathname === "/shop" && "menu-active")}>
+      <Link href={"/"} className={cn("menu-btn", pathname === "/shop" && "menu-active")}>
         <HiOutlineShoppingCart className="text-2xl" />
         Treo account<sup className="text-red-500 font-bold text-xs -translate-x-3 animate-pulse">New</sup>
       </Link>
-      <Link href={"/b"} className={cn("menu-btn", pathname === "/b" && "menu-active")}>
+      <Link href={"/"} className={cn("menu-btn", pathname === "/b" && "menu-active")}>
         <GoPencil className="text-2xl" />
         Chia sẻ<sup className="text-red-500 font-bold text-xs -translate-x-3 animate-pulse">New</sup>
       </Link>
-      <Link href={"/e"} className={cn("menu-btn", pathname === "/e" && "menu-active")}>
+      <Link href={"/"} className={cn("menu-btn", pathname === "/e" && "menu-active")}>
         <MdOutlineEmojiEvents className="text-2xl" />
         Sự kiện<sup className="text-red-500 font-bold text-xs -translate-x-3 animate-pulse">New</sup>
       </Link>

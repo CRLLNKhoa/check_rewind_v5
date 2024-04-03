@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -19,11 +21,11 @@ import { IoSearchCircleOutline } from "react-icons/io5";
 export default function Home() {
   const [data, setData] = useState(dataSingleCost);
   const [dataTable, setDataTable] = useState<any>([]);
-  const [currentDay, setCurrentDay] = useState<any>(0);
-  const [plannedDay, setPlannedDay] = useState<any>(0);
+  const [currentDay, setCurrentDay] = useState<any>(1000);
+  const [plannedDay, setPlannedDay] = useState<any>(1200);
   const [sort, setSort] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
+  
   function handleSearch() {
     setIsLoading(true)
     const result = data.filter(
@@ -50,6 +52,10 @@ export default function Home() {
       setIsLoading(false)
     },1000)
   }
+
+  useEffect(() => {
+    handleSearch()
+  },[])
 
   return (
     <main className="flex flex-col items-center justify-between overflow-y-auto">

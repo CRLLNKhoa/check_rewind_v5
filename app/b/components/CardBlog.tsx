@@ -14,10 +14,7 @@ export default function CardBlog() {
         Nâng táo sao cho nó chuẩn!
       </h1>
       <p className="line-clamp-3 leading-1 mt-2 text-sm text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-        amet possimus inventore fugit aliquam tenetur facere doloribus repellat
-        ab, deleniti odio cupiditate voluptatum omnis exercitationem! Ipsam
-        assumenda nemo optio quisquam.
+      Nội dung bài viết
       </p>
       <div className="flex justify-between">
         <Link href={"/"} className="text-primary text-md font-bold mt-2 hover:underline underline-offset-4 duration-500">Đọc bài viết</Link>
